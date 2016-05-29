@@ -1,1 +1,12 @@
-ul li{display: inline-block;cursor: pointer;}
+/*通用*/
+.clearfix:after{display: block;content: ".";clear: both;height: 0;visibility: hidden;overflow: hidden;}
+.colornav{color: #787878;}
+.colornav:hover{color: #f7941e;}
+/*页首（Logo、索引）*/
+.m-header .logo{width: 200px;height: 80px;}
+.m-header .logo h1{line-height: 80px;font-weight: bold;}
+.m-header .nav ul{padding: 0;list-style-type: none;}
+.m-header .nav ul li{display: inline-block;margin-left: 0;margin-right: 40px;line-height: 40px;}
+.m-header .nav ul li a{text-decoration: none;}
+/*home分页 轮播图*/
+.g-home .m-slider{height: 460px;background: #0c0628;}

@@ -3,18 +3,38 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ngRoute</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css"> 
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
 		<script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
-		<script src="js/module.js"></script>
+		 <script src="js/module.js"></script>
 		<script src="js/route.js"></script>
 	</head>
 	<body ng-app="myApp">
-		<ul>
-			<li><a href="#/">home</a></li>
-			<li><a href="#/list">list</a></li>
-			<li><a href="#/form">form</a></li>
-		</ul>
+		<div class="g-header">
+			<div class="m-header container">
+				<div class="clearfix">
+					<div class="logo">
+						<h1>Yibay</h1>
+					</div>
+				</div>
+				<div class="nav">
+					<h4>
+						<ul>
+							<li><a class="colornav" href="#/">首页</a></li>
+							<li><a class="colornav" href="#/module">组件</a></li>
+							<li><a class="colornav" href="#/web">整站</a></li>
+							<li><a class="colornav" href="#/course">教程</a></li>
+						</ul>
+					</h4>
+				</div>
+			</div>
+		</div>
 		<div ng-view></div>
+		<!-- <div class="g-home">
+			<div class="m-slider"></div>
+		</div> -->
 	</body>
 </html>

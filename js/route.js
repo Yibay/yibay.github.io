@@ -1,6 +1,7 @@
 app.config(["$routeProvider",function ($routeProvider) {
-	$routeProvider.when("/",{template: 1111})
-	.when("/list",{templateUrl: "html/list.html"})
-	.when("/form",{template: "form"})
+	$routeProvider.when("/",{templateUrl: "template/home.html"})
+	.when("/module",{templateUrl: "template/list.html"})
+	.when("/web",{template: "web"})
+	.when("/course",{template: "course"})
 	.otherwise({redirectTo: "/"});
 }]);
