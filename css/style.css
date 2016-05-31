@@ -1,12 +1,25 @@
 /*通用*/
-.clearfix:after{display: block;content: ".";clear: both;height: 0;visibility: hidden;overflow: hidden;}
+/*.clearfix:after{display: block;content: ".";clear: both;height: 0;visibility: hidden;overflow: hidden;}*/
 .colornav{color: #787878;}
 .colornav:hover{color: #f7941e;}
 /*页首（Logo、索引）*/
 .m-header .logo{width: 200px;height: 80px;}
-.m-header .logo h1{line-height: 80px;font-weight: bold;}
+.m-header .logo h1{margin: 0;line-height: 80px;font-weight: bold;}
 .m-header .nav ul{padding: 0;list-style-type: none;}
 .m-header .nav ul li{display: inline-block;margin-left: 0;margin-right: 40px;line-height: 40px;}
 .m-header .nav ul li a{text-decoration: none;}
 /*home分页 轮播图*/
-.g-home .m-slider{height: 460px;background: #0c0628;}
+.g-home .m-slider{background: #0c0628;}
+.g-home .m-slider .introduce{height: 230px;}
+.g-home .m-slider .nav{height: 230px;padding-top: 35px;}
+
+@media screen and (min-width: 1200px){
+	.g-home .m-slider .introduce{height: 460px;}
+	.g-home .m-slider .nav{height: 460px;padding-top: 70px;}
+	.g-home .m-slider .nav .row div{margin-bottom: 12px;}
+}
+
+
+
+.red{background: red;}
+.green{background: green;}
